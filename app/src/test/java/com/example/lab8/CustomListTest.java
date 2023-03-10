@@ -68,11 +68,11 @@ public class CustomListTest {
     void testCountCities() {
         list = MockCityList();
         City city = new City("Charlottetown", "Prince Edward Island");
-        assertEquals(1, list.countCities());
+        assertEquals(0, list.countCities());
         list.addCity(city);
-        assertEquals(2, list.countCities());
-        list.delete(city);
         assertEquals(1, list.countCities());
+        list.delete(city);
+        assertEquals(0, list.countCities());
     }
 
 }
