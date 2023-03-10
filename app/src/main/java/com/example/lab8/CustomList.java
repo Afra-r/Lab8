@@ -58,7 +58,7 @@ public class CustomList extends ArrayAdapter<City> {
      * this adds a city object to the list
      * the second phase, you can add the city
      *
-     * @param city
+     * @param city City object
      */
     public void addCity(City city) {
         cities.add(city);
@@ -67,11 +67,20 @@ public class CustomList extends ArrayAdapter<City> {
     /**
      * this checks if a city is in the list
      *
-     * @param city
+     * @param city City object
      */
     public boolean hasCity(City city) {
 
         return cities.contains(city);
+    }
+
+    /**
+     * deletes a city from the list
+     *
+     * @param city City object
+     */
+    public void delete(City city) {
+
     }
 
 }
